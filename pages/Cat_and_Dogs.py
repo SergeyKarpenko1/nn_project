@@ -18,7 +18,10 @@ import urllib.request
 # Load models
 model_resnet18 = models.resnet18()
 model_resnet18.fc = nn.Linear(512, 1)
-model_resnet18.load_state_dict(torch.load('Weights/resnet18_weights.pth'))
+device = torch.device('cpu')  # или 'cuda', если используете GPU
+model_resnet18.load_state_dict(torch.load(
+    'Weights/resnet18_weights.pth', map_location=device))
+# model_resnet18.load_state_dict(torch.load('Weights/resnet18_weights.pth'))
 model_resnet18.eval()
 
 
