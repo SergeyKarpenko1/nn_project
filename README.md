@@ -24,4 +24,4 @@
    
  - модель была дообучена на [Object Detection Dataset](https://www.kaggle.com/datasets/fanconic/skin-cancer-malignant-vs-benign)
 
-[![Open in Streamlit]
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]
